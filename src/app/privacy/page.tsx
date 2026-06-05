@@ -8,27 +8,35 @@ export const metadata = {
 const sections = [
   {
     title: '1. Information We Collect',
-    body: 'Ansh collects only the information you voluntarily provide: your email address for authentication, your display name, and the financial data you enter (expenses, income, group splits). We do not sell or share your personal data with third parties.',
+    body: 'To provide Ansh we collect: (a) Account information — your email address (for sign-in and account recovery) and a display name you choose. (b) Financial information you enter yourself — your expenses, income, budgets, savings goals, debts, and any shared-group expenses you record. For debts we store only a label, a type, and the balances you enter — never card numbers or bank account details. (c) Basic technical data — your app version and last-active date, used only to support the app. The app works only with the information you choose to enter.',
   },
   {
-    title: '2. How We Use Your Information',
-    body: 'Your data is used solely to provide the Ansh service — tracking your expenses, income, and shared group costs. Financial data is stored securely in Google Firebase Firestore and is only accessible by you.',
+    title: '2. Information We Do NOT Collect',
+    body: 'Ansh does not collect or store: payment card numbers, CVVs, or bank account credentials; government IDs or national identification numbers; your phone number or postal address; your location; your contacts, photos, or files; or any advertising identifiers. If you enable fingerprint or face unlock, that is handled entirely by your Android device and is never sent to us. We do not use advertising networks, analytics SDKs, or third-party trackers.',
   },
   {
-    title: '3. Data Storage & Security',
-    body: 'All data is stored on Google Firebase infrastructure with industry-standard encryption in transit and at rest. Authentication is handled by Firebase Auth with email/password. We do not store passwords in plaintext.',
+    title: '3. How We Use Your Information',
+    body: 'Your information is used solely to operate Ansh — to show your balances, budgets, goals, and group splits, and to keep you signed in. We never sell, rent, or share your personal data with third parties for marketing, and we never use it for advertising or profiling.',
   },
   {
-    title: '4. Data Deletion',
-    body: 'You can delete your account and all associated data at any time from the Settings page in the app. Upon deletion, all your financial records are permanently removed from our servers within 30 days.',
+    title: '4. Sharing With Group Members',
+    body: 'If you create or join a shared expense group, the information you add to that group — the group name, the expenses and amounts you log, who-owes-whom settlements, and your display name — is visible to the other members of that group. Your personal (non-group) data is never visible to anyone but you.',
   },
   {
-    title: '5. Third-Party Services',
-    body: 'Ansh uses Google Firebase for authentication and database storage. Google’s privacy policy applies to data processed through their services. We do not use advertising networks or analytics trackers.',
+    title: '5. Data Storage & Security',
+    body: 'Your data is stored on Google Firebase (Firestore), encrypted in transit (HTTPS/TLS) and at rest. Sign-in is handled by Firebase Authentication; your password is never stored in plaintext and is never visible to us. Security rules restrict access so that only you can read your own data.',
   },
   {
-    title: '6. Contact',
-    body: 'For privacy concerns or data requests, reach us through the in-app Support page (Settings → Support).',
+    title: '6. Data Retention & Deletion',
+    body: 'You can delete your account and all associated data at any time from Settings → Delete Account. This permanently removes your profile, expenses, income, budgets, goals, debts, custom categories, and removes you from shared groups.',
+  },
+  {
+    title: '7. Children’s Privacy',
+    body: 'Ansh is intended for adults and is not directed at children under 13. We do not knowingly collect personal information from children.',
+  },
+  {
+    title: '8. Changes & Contact',
+    body: 'We may update this policy from time to time and will revise the date above. For privacy questions or data-deletion requests, reach us through the in-app Support page (Settings → Support).',
   },
 ];
 
