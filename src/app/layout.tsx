@@ -10,7 +10,7 @@ export const metadata: Metadata = {
       : 'http://localhost:3000'
   ),
   title: 'Ansh — Smart Finance Tracker',
-  description: 'Track expenses, manage income, split group bills, and understand where your money goes. Ansh is coming soon to Android.',
+  description: 'Track expenses, manage income, split group bills, and understand where your money goes. Free forever on Android — get Ansh on Google Play.',
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ansh — Smart Finance Tracker',
-    description: 'Track expenses, manage income, split group bills. Coming soon to Android.',
+    description: 'Track expenses, manage income, split group bills. Free forever on Android.',
     type: 'website',
     images: [{ url: '/og-logo.png', width: 512, height: 512 }],
   },
   twitter: {
     card: 'summary',
     title: 'Ansh — Smart Finance Tracker',
-    description: 'Track expenses, manage income, split group bills. Coming soon to Android.',
+    description: 'Track expenses, manage income, split group bills. Free forever on Android.',
     images: ['/og-logo.png'],
   },
 };

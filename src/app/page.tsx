@@ -270,7 +270,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Coming Soon CTA ───────────────────────────────────────────────── */}
+      {/* ── Launch CTA ───────────────────────────────────────────────────── */}
       <section className="py-24 px-6 border-t border-white/6">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8">
