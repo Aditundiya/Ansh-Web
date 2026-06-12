@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Hero from '@/components/ui/animated-shader-hero';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/ansh.app';
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.ansh.app';
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.ansh.money';
 const LAUNCH_DATE = 'June 14, 2026';
 
 const features = [
