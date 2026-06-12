@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Hero from '@/components/ui/animated-shader-hero';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/ansh.app';
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.ansh.app';
+const LAUNCH_DATE = 'June 14, 2026';
 
 const features = [
   {
@@ -60,11 +62,11 @@ const steps = [
 const faqs = [
   {
     question: 'When is Ansh launching?',
-    answer: 'We\'re putting the finishing touches on it right now. No exact date yet, but it\'s close. Follow us on Instagram and you\'ll be the first to know.',
+    answer: `Ansh launches ${LAUNCH_DATE} on Google Play. Follow us on Instagram for the launch announcement and what's coming next.`,
   },
   {
     question: 'Will it cost anything?',
-    answer: 'We\'re still working out the details, but our goal is to keep the core features completely free. No surprise charges.',
+    answer: 'No. Ansh is completely free — no ads, no subscriptions, no premium tier, no surprise charges. Free forever.',
   },
   {
     question: 'What happens to my financial data?',
@@ -84,10 +86,10 @@ export default function LandingPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <Hero
-        badge="Coming Soon to Android"
+        badge={`Launching ${LAUNCH_DATE} · Free forever`}
         headline={{ line1: 'Your Money,', line2: 'Mastered.' }}
         subtitle="Ansh helps you see exactly where your money is going. Log expenses in seconds, split bills with friends, work towards your savings goals. No spreadsheets needed."
-        primaryButton={{ text: 'Follow on Instagram', href: INSTAGRAM_URL }}
+        primaryButton={{ text: 'Get it on Google Play', href: PLAY_STORE_URL }}
         secondaryButton={{ text: 'See what it does', href: '#features' }}
       />
 
@@ -273,28 +275,38 @@ export default function LandingPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8">
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-            Available Soon
+            Launching {LAUNCH_DATE}
           </div>
           <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
-            Want to know{' '}
+            Ready to master{' '}
             <span className="bg-gradient-to-r from-indigo-300 to-violet-400 bg-clip-text text-transparent">
-              when it drops?
+              your money?
             </span>
           </h2>
           <p className="text-lg text-white/50 mb-10 leading-relaxed">
-            We're almost there. Follow us on Instagram to catch the launch announcement, see behind-the-scenes progress, and be part of the first wave of users.
+            Free forever. No ads, no subscriptions, no data harvesting. Download Ansh on Google Play and take control of your finances.
           </p>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-400 hover:to-violet-400 text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/30"
-          >
-            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            Follow @ansh.app
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-400 hover:to-violet-400 text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/30"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.4 2.4 0 0 1-.497-1.475V3.29c0-.553.184-1.063.496-1.476zm10.831 10.833l2.456 2.457-9.69 5.482c-.638.361-1.358.396-1.99.111l9.224-8.05zm3.59-3.59l3.077 1.74c1.19.673 1.19 2.405 0 3.078l-3.078 1.74-2.69-2.69 2.69-2.69.001-.178zm-12.815-7.6c.633-.286 1.353-.25 1.992.11l9.69 5.483-2.457 2.456-9.225-8.049z"/>
+              </svg>
+              Get it on Google Play
+            </a>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/15 hover:border-indigo-400/50 text-white/80 hover:text-white font-semibold text-base transition-all duration-300"
+            >
+              Follow @ansh.app
+            </a>
+          </div>
         </div>
       </section>
 
@@ -306,7 +318,10 @@ export default function LandingPage() {
             <span className="font-bold text-white/90 text-lg">Ansh</span>
           </div>
           <p className="text-white/30 text-sm text-center">
-            © {new Date().getFullYear()} Ansh. In development. Coming soon to Android.
+            © {new Date().getFullYear()} Ansh. Free forever. Built for Android.{' '}
+            <a href="/privacy" className="underline hover:text-white/60 transition-colors">Privacy</a>
+            {' · '}
+            <a href="/terms" className="underline hover:text-white/60 transition-colors">Terms</a>
           </p>
           <a
             href={INSTAGRAM_URL}
