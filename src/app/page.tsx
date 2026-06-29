@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     question: 'Which phones will it work on?',
-    answer: 'Ansh is built for Android. If your phone is running Android 6.0 or newer, you\'re good to go.',
+    answer: 'Ansh is built for Android. If your phone is running Android 7.0 or newer, you\'re good to go.',
   },
 ];
 
