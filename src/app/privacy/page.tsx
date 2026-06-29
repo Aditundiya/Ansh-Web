@@ -8,7 +8,7 @@ export const metadata = {
 const sections = [
   {
     title: '1. Information We Collect',
-    body: 'To provide Ansh we collect: (a) Account information — your email address (for sign-in and account recovery) and a display name you choose. (b) Financial information you enter yourself — your expenses, income, budgets, savings goals, debts, and any shared-group expenses you record. For debts we store only a label, a type, and the balances you enter — never card numbers or bank account details. (c) Basic technical data — your app version and last-active date, used only to support the app. The app works only with the information you choose to enter.',
+    body: 'To provide Ansh we collect: (a) Account information — your email address (for sign-in and account recovery) and a display name you choose. You can sign in with an email and password or with your Google account; if you use Google sign-in, Google provides Ansh with your Google account email address and basic profile (your name), subject to Google’s own privacy policy. (b) Financial information you enter yourself — your expenses, income, budgets, savings goals, debts, and any shared-group expenses you record. For debts we store only a label, a type, and the balances you enter — never card numbers or bank account details. (c) Basic technical data — your app version and last-active date, used only to support the app. The app works only with the information you choose to enter.',
   },
   {
     title: '2. Information We Do NOT Collect',
@@ -24,7 +24,7 @@ const sections = [
   },
   {
     title: '5. Data Storage & Security',
-    body: 'Your data is stored on Google Firebase (Firestore), encrypted in transit (HTTPS/TLS) and at rest. Sign-in is handled by Firebase Authentication; your password is never stored in plaintext and is never visible to us. Security rules restrict access so that only you can read your own data.',
+    body: 'Your data is stored on Google Firebase (Firestore), encrypted in transit (HTTPS/TLS) and at rest. Sign-in is handled by Firebase Authentication (email and password, or Google sign-in); your password is never stored in plaintext and is never visible to us. If you turn on bill reminders, Ansh schedules reminder notifications locally on your device — no notification tokens are sent to or stored by us. Security rules restrict access so that only you can read your own data.',
   },
   {
     title: '6. Data Retention & Deletion',

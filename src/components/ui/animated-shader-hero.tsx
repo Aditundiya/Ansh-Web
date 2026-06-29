@@ -187,8 +187,7 @@ export default function Hero({ badge, headline, subtitle, primaryButton, seconda
             {secondaryButton && (
               <a
                 href={secondaryButton.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(secondaryButton.href.startsWith('#') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
                 className="px-8 py-4 rounded-full font-semibold text-base border border-indigo-400/40 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-100 transition-all duration-300 hover:scale-105 backdrop-blur-sm text-center"
               >
                 {secondaryButton.text}

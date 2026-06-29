@@ -24,7 +24,7 @@ export default function TermsPage() {
       <div className="mx-auto max-w-2xl px-6 py-16">
         <Link href="/" className="mb-8 inline-block text-sm text-[#6366F1] hover:underline">← Back to Ansh</Link>
         <h1 className="mb-2 text-3xl font-bold">Terms of Service</h1>
-        <p className="mb-10 text-sm text-white/50">Effective Date: January 1, 2026</p>
+        <p className="mb-10 text-sm text-white/50">Effective Date: June 2026</p>
         <div className="space-y-8 text-sm leading-relaxed">
           {sections.map((s) => (
             <section key={s.title}>

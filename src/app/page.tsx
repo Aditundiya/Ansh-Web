@@ -6,7 +6,10 @@ import Hero from '@/components/ui/animated-shader-hero';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/ansh.app';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.ansh.money';
-const LAUNCH_DATE = 'June 14, 2026';
+// Ansh is in EARLY ACCESS (Play internal/closed testing) — the public PLAY_STORE_URL
+// 404s for non-testers until the production track is live. Point CTAs at the tester opt-in
+// link for now; switch them back to PLAY_STORE_URL once production is published.
+const EARLY_ACCESS_URL = 'https://play.google.com/apps/internaltest/4701195799028205834';
 
 const features = [
   {
@@ -18,6 +21,11 @@ const features = [
     emoji: '📈',
     title: 'Income Management',
     description: 'Whether it\'s your salary, a side gig, or a one-off payment, Ansh keeps track of everything coming in.',
+  },
+  {
+    emoji: '🧮',
+    title: 'Budgets',
+    description: 'Set a monthly budget for each category and a simple gauge shows how much you have left — so you stop overspending before it happens.',
   },
   {
     emoji: '👥',
@@ -61,8 +69,8 @@ const steps = [
 
 const faqs = [
   {
-    question: 'When is Ansh launching?',
-    answer: `Ansh launches ${LAUNCH_DATE} on Google Play. Follow us on Instagram for the launch announcement and what's coming next.`,
+    question: 'How do I get Ansh?',
+    answer: 'Ansh is in early access on Google Play right now. Tap "Get early access" above to join, and follow us on Instagram for the public launch announcement.',
   },
   {
     question: 'Will it cost anything?',
@@ -70,7 +78,7 @@ const faqs = [
   },
   {
     question: 'What happens to my financial data?',
-    answer: 'Your data is stored securely in your own account. We don\'t sell it, share it, or even look at it. Your finances are yours.',
+    answer: 'Ansh never links to your bank — you enter only what you want. Your data is stored securely in your own account, and we don\'t sell it, share it, or even look at it. Your finances are yours, and you can export or delete everything anytime.',
   },
   {
     question: 'Which phones will it work on?',
@@ -86,10 +94,10 @@ export default function LandingPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <Hero
-        badge={`Launching ${LAUNCH_DATE} · Free forever`}
+        badge="Now in early access · Free forever"
         headline={{ line1: 'Your Money,', line2: 'Mastered.' }}
-        subtitle="Ansh helps you see exactly where your money is going. Log expenses in seconds, split bills with friends, work towards your savings goals. No spreadsheets needed."
-        primaryButton={{ text: 'Get it on Google Play', href: PLAY_STORE_URL }}
+        subtitle="A budgeting app and a bill-splitter in one. Log expenses in seconds, set budgets, split with friends, and hit your savings goals. Free forever, no ads, and no bank linking — your data stays yours."
+        primaryButton={{ text: 'Get early access', href: EARLY_ACCESS_URL }}
         secondaryButton={{ text: 'See what it does', href: '#features' }}
       />
 
@@ -275,7 +283,7 @@ export default function LandingPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8">
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-            Launching {LAUNCH_DATE}
+            In early access now
           </div>
           <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-6">
             Ready to master{' '}
@@ -284,11 +292,11 @@ export default function LandingPage() {
             </span>
           </h2>
           <p className="text-lg text-white/50 mb-10 leading-relaxed">
-            Free forever. No ads, no subscriptions, no data harvesting. Download Ansh on Google Play and take control of your finances.
+            Free forever. No ads, no subscriptions, no data harvesting, no bank linking. Get early access to Ansh on Google Play and take control of your finances.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href={PLAY_STORE_URL}
+              href={EARLY_ACCESS_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-400 hover:to-violet-400 text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/30"
@@ -296,7 +304,7 @@ export default function LandingPage() {
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a2.4 2.4 0 0 1-.497-1.475V3.29c0-.553.184-1.063.496-1.476zm10.831 10.833l2.456 2.457-9.69 5.482c-.638.361-1.358.396-1.99.111l9.224-8.05zm3.59-3.59l3.077 1.74c1.19.673 1.19 2.405 0 3.078l-3.078 1.74-2.69-2.69 2.69-2.69.001-.178zm-12.815-7.6c.633-.286 1.353-.25 1.992.11l9.69 5.483-2.457 2.456-9.225-8.049z"/>
               </svg>
-              Get it on Google Play
+              Get early access
             </a>
             <a
               href={INSTAGRAM_URL}
@@ -314,7 +322,7 @@ export default function LandingPage() {
       <footer className="border-t border-white/8 py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Image src="/favicon.png" alt="Ansh" width={32} height={32} className="rounded-lg" />
+            <Image src="/favicon-32x32.png" alt="Ansh" width={32} height={32} className="rounded-lg" />
             <span className="font-bold text-white/90 text-lg">Ansh</span>
           </div>
           <p className="text-white/30 text-sm text-center">
