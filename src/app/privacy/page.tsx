@@ -27,15 +27,23 @@ const sections = [
     body: 'Your data is stored on Google Firebase (Firestore), encrypted in transit (HTTPS/TLS) and at rest. Sign-in is handled by Firebase Authentication (email and password, or Google sign-in); your password is never stored in plaintext and is never visible to us. If you turn on bill reminders, Ansh schedules reminder notifications locally on your device — no notification tokens are sent to or stored by us. Security rules restrict access so that only you can read your own data.',
   },
   {
-    title: '6. Data Retention & Deletion',
+    title: '6. Optional Google Drive Backup',
+    body: 'You can optionally back up your personal data to your own Google Drive. The backup is stored in a private, app-specific folder inside your Google account (the “app data” area) — only Ansh, signed in as you, can access it. This copy lives in your Google account, not on our servers, and we cannot read it. You can turn backup on or off at any time, and it never includes shared-group data.',
+  },
+  {
+    title: '7. Receipt Scanning (On-Device)',
+    body: 'If you use receipt scanning, Ansh uses your camera to capture the receipt, and the image is read entirely on your device to pull out the amount, date, and merchant. The photo is not uploaded to us, is not stored by Ansh, and is never used for anything else. We do not access your photo library or other files.',
+  },
+  {
+    title: '8. Data Retention & Deletion',
     body: 'You can delete your account and all associated data at any time from Settings → Delete Account. This permanently removes your profile, expenses, income, budgets, goals, debts, custom categories, and removes you from shared groups.',
   },
   {
-    title: '7. Children’s Privacy',
+    title: '9. Children’s Privacy',
     body: 'Ansh is intended for adults and is not directed at children under 13. We do not knowingly collect personal information from children.',
   },
   {
-    title: '8. Changes & Contact',
+    title: '10. Changes & Contact',
     body: 'We may update this policy from time to time and will revise the date above. For privacy questions or data-deletion requests, reach us through the in-app Support page (Settings → Support).',
   },
 ];
@@ -46,7 +54,7 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-2xl px-6 py-16">
         <Link href="/" className="mb-8 inline-block text-sm text-[#6366F1] hover:underline">← Back to Ansh</Link>
         <h1 className="mb-2 text-3xl font-bold">Privacy Policy</h1>
-        <p className="mb-10 text-sm text-white/50">Last updated: June 2026</p>
+        <p className="mb-10 text-sm text-white/50">Last updated: July 2026</p>
         <div className="space-y-8 text-sm leading-relaxed">
           {sections.map((s) => (
             <section key={s.title}>

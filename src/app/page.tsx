@@ -47,6 +47,16 @@ const features = [
     title: 'Smart Reminders',
     description: 'Set up your recurring bills once and Ansh will nudge you before they\'re due. No more late fees.',
   },
+  {
+    emoji: '📸',
+    title: 'Receipt Scanning',
+    description: 'Snap a photo of a receipt and Ansh reads the amount, date and merchant for you — right on your phone, no typing.',
+  },
+  {
+    emoji: '☁️',
+    title: 'Your Data, Backed Up',
+    description: 'Back up to your own private Google Drive folder. It stays in your account — we can\'t see it — and restores on a new phone.',
+  },
 ];
 
 const steps = [
@@ -78,7 +88,11 @@ const faqs = [
   },
   {
     question: 'What happens to my financial data?',
-    answer: 'Ansh never links to your bank — you enter only what you want. Your data is stored securely in your own account, and we don\'t sell it, share it, or even look at it. Your finances are yours, and you can export or delete everything anytime.',
+    answer: 'Ansh never links to your bank — you enter only what you want. Your data is stored securely in your own account, and you can optionally back it up to your own private Google Drive folder that only you can see. We don\'t sell it, share it, or even look at it. Export or delete everything anytime.',
+  },
+  {
+    question: 'Does it work offline?',
+    answer: 'Yes. Add and view your expenses with no internet — everything syncs automatically the next time you\'re online.',
   },
   {
     question: 'Which phones will it work on?',

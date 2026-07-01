@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       : 'https://ansh-web.vercel.app'
   ),
   title: 'Ansh — Smart Finance Tracker',
-  description: 'Track expenses, manage income, split group bills, and understand where your money goes. Free forever on Android — get Ansh on Google Play.',
+  description: 'A budgeting app and bill-splitter in one. Track expenses, set budgets, split bills, scan receipts, and hit your savings goals. Free forever on Android — no ads, no bank linking, your data stays yours.',
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Ansh — Smart Finance Tracker',
-    description: 'Track expenses, manage income, split group bills. Free forever on Android.',
+    description: 'Budgeting + bill-splitting in one. Free forever on Android — no ads, no bank linking, your data stays yours.',
     type: 'website',
     images: [{ url: '/og-logo.png', width: 512, height: 512 }],
   },
   twitter: {
     card: 'summary',
     title: 'Ansh — Smart Finance Tracker',
-    description: 'Track expenses, manage income, split group bills. Free forever on Android.',
+    description: 'Budgeting + bill-splitting in one. Free forever on Android — no ads, no bank linking, your data stays yours.',
     images: ['/og-logo.png'],
   },
 };
