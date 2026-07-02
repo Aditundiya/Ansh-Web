@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ansh.money",
+      "sha256_cert_fingerprints": [
+        "6A:B6:6B:1F:57:4F:7B:68:29:06:28:D8:69:70:E0:32:71:DE:8C:2A:43:95:90:13:5C:68:CB:D3:83:66:05:2A",
+        "22:24:DD:44:12:8E:2B:64:94:E0:04:F5:5A:36:A4:C5:93:F7:30:F5:83:E0:F2:B6:68:92:59:08:1E:FE:13:0C"
+      ]
+    }
+  }
+]
