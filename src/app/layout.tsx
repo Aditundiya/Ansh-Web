@@ -10,8 +10,18 @@ export const metadata: Metadata = {
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
       : 'https://ansh-web.vercel.app'
   ),
-  title: 'Ansh — Smart Finance Tracker',
-  description: 'A budgeting app and bill-splitter in one. Track expenses, set budgets, split bills, scan receipts, and hit your savings goals. Free forever on Android — no ads, no bank linking, your data stays yours.',
+  title: 'Ansh — Free Expense Tracker & Bill Splitter for Android',
+  description: 'Ansh is a free budgeting app and bill-splitter in one. Track expenses, set budgets, split bills with friends, scan receipts, and hit your savings goals. Free forever on Android — no ads, no bank linking, your data stays yours.',
+  applicationName: 'Ansh',
+  keywords: [
+    'Ansh', 'expense tracker', 'budget app', 'bill splitter', 'split bills',
+    'split bills with friends', 'money manager', 'personal finance',
+    'expense manager', 'spending tracker', 'budget planner', 'savings goals',
+    'group expenses', 'settle up', 'receipt scanner', 'bill reminders',
+    'shared expenses', 'flatmate expenses', 'trip expenses', 'free budget app',
+    'no ads finance app', 'offline expense tracker', 'Android finance app',
+    'Splitwise alternative',
+  ],
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
