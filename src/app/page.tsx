@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Hero from '@/components/ui/animated-shader-hero';
 
-const INSTAGRAM_URL = 'https://www.instagram.com/ansh.app';
+const INSTAGRAM_URL = 'https://www.instagram.com/joinansh';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.ansh.money';
 // Ansh is in EARLY ACCESS (Play internal/closed testing) — the public PLAY_STORE_URL
 // 404s for non-testers until the production track is live. Point CTAs at the tester opt-in
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     question: 'Will it cost anything?',
-    answer: 'No. Ansh is completely free — no ads, no subscriptions, no premium tier, no surprise charges. Free forever.',
+    answer: 'Ansh is in early access right now while we finalize the details, so we\'ll share pricing clearly as we roll out. Whatever we decide, we\'ll never link to your bank or sell your data.',
   },
   {
     question: 'What happens to my financial data?',
@@ -108,9 +108,9 @@ export default function LandingPage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <Hero
-        badge="Now in early access · Free forever"
+        badge="Now in early access"
         headline={{ line1: 'Your Money,', line2: 'Mastered.' }}
-        subtitle="A budgeting app and a bill-splitter in one. Log expenses in seconds, set budgets, split with friends, and hit your savings goals. Free forever, no ads, and no bank linking — your data stays yours."
+        subtitle="A budgeting app and a bill-splitter in one. Log expenses in seconds, set budgets, split with friends, and hit your savings goals. No bank linking — your data stays yours."
         primaryButton={{ text: 'Get early access', href: EARLY_ACCESS_URL }}
         secondaryButton={{ text: 'See what it does', href: '#features' }}
       />
@@ -306,7 +306,7 @@ export default function LandingPage() {
             </span>
           </h2>
           <p className="text-lg text-white/50 mb-10 leading-relaxed">
-            Free forever. No ads, no subscriptions, no data harvesting, no bank linking. Get early access to Ansh on Google Play and take control of your finances.
+            Private by design. No data harvesting, no bank linking. Get early access to Ansh on Google Play and take control of your finances.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -326,7 +326,7 @@ export default function LandingPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/15 hover:border-indigo-400/50 text-white/80 hover:text-white font-semibold text-base transition-all duration-300"
             >
-              Follow @ansh.app
+              Follow @joinansh
             </a>
           </div>
         </div>
@@ -340,7 +340,7 @@ export default function LandingPage() {
             <span className="font-bold text-white/90 text-lg">Ansh</span>
           </div>
           <p className="text-white/30 text-sm text-center">
-            © {new Date().getFullYear()} Ansh. Free forever. Built for Android.{' '}
+            © {new Date().getFullYear()} Ansh. Built for Android.{' '}
             <a href="/privacy" className="underline hover:text-white/60 transition-colors">Privacy</a>
             {' · '}
             <a href="/terms" className="underline hover:text-white/60 transition-colors">Terms</a>
@@ -354,7 +354,7 @@ export default function LandingPage() {
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
             </svg>
-            @ansh.app
+            @joinansh
           </a>
         </div>
       </footer>

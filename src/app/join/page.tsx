@@ -15,7 +15,7 @@ function JoinInner() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/favicon.png" alt="Ansh" className="mx-auto h-16 w-16 rounded-2xl mb-6" />
         <h1 className="text-2xl font-bold mb-2">You&apos;re invited to a group on Ansh</h1>
-        <p className="text-white/60 mb-6">Split bills with friends and settle up — free forever, no ads.</p>
+        <p className="text-white/60 mb-6">Split bills with friends and settle up with Ansh.</p>
 
         {code && (
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5 mb-6">
