@@ -344,6 +344,8 @@ export default function LandingPage() {
             <a href="/privacy" className="underline hover:text-white/60 transition-colors">Privacy</a>
             {' · '}
             <a href="/terms" className="underline hover:text-white/60 transition-colors">Terms</a>
+            {' · '}
+            <a href="/delete-account" className="underline hover:text-white/60 transition-colors">Delete account</a>
           </p>
           <a
             href={INSTAGRAM_URL}
